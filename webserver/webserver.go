@@ -57,7 +57,7 @@ func endpointFunc(w http.ResponseWriter, r *http.Request) {
         if err == io.EOF {
                 break
         }
-    fmt.Fprintf(w, "The first value is %q", record[0])
+    fmt.Fprintf(w, "La marca del cote es %q \nEl model del cotxe es %q \nEl nombre de dies es %q \nEl nombre d'unitats es %q \n" , record[0], record[1], record[2], record[3])
     //res := ResponseMessage{Carmark: "Text1", Field2: param}
     //json.NewEncoder(w).Encode(res)
     }
